@@ -1,6 +1,62 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./assets/Norse-Bold.otf);
+}
+
 *, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
+#left-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.plant-img {
+    position: fixed;
+    width: 35%;
+    height: 100vh;
+}
+
+#left-container .upper-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 1%;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 35%;
+    top: 20%;
+    /* border: 1px solid red; */
+}
+
+.odin-logo {
+    width: 20%;
+}
+
+.odin-txt {
+    color: white;
+    font-family: Norse-Bold;
+    font-size: clamp(1rem, 6.67vw, 16rem);
+}
+
+#left-container .bottom-content {
+    position: absolute;
+    width: 35%;
+    bottom: 1%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(0.4rem, 1.1vw, 2rem);
+    text-align: center;
+    /* border: 1px solid red; */
+}
+
+#left-container .bottom-content a:visited {
+    color: white;
+}
