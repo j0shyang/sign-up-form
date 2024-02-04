@@ -15,7 +15,6 @@
     flex-direction: column;
     position: relative;
     height: 100vh;
-    /* border: 1px solid red; */
 }
 
 .plant-img {
@@ -33,7 +32,6 @@
     background-color: rgb(0, 0, 0, 0.5);
     width: 35%;
     top: 20%;
-    /* border: 1px solid red; */
 }
 
 .odin-logo {
@@ -54,7 +52,6 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: clamp(0.4rem, 1.1vw, 2rem);
     text-align: center;
-    /* border: 1px solid red; */
 }
 
 #left-container .bottom-content a:visited {
