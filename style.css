@@ -10,16 +10,24 @@
     overflow: hidden;
 }
 
+#main-container {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------------- Left Side -------------------------- */
+
 #left-container {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 100vh;
+    overflow: hidden;
+    min-width: 50%;
 }
 
 .plant-img {
-    position: fixed;
-    width: 35%;
+    width: 100%;
     height: 100vh;
 }
 
@@ -30,8 +38,8 @@
     position: absolute;
     padding: 1%;
     background-color: rgb(0, 0, 0, 0.5);
-    width: 35%;
-    top: 20%;
+    width: 100%;
+    top: 22%;
 }
 
 .odin-logo {
@@ -41,19 +49,116 @@
 .odin-txt {
     color: white;
     font-family: Norse-Bold;
-    font-size: clamp(1rem, 6.67vw, 16rem);
+    font-size: clamp(2.1rem, 10vw, 50rem);
 }
 
 #left-container .bottom-content {
     position: absolute;
-    width: 35%;
+    width: 100%;
     bottom: 1%;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(0.4rem, 1.1vw, 2rem);
+    font-size: clamp(0.5rem, 1.1vw, 2rem);
     text-align: center;
 }
 
 #left-container .bottom-content a:visited {
     color: white;
+}
+
+/* -------------------------- Right Side -------------------------- */
+#right-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    padding-top: 5.5%;
+    font-size: clamp(0.66rem, 1vw, 3rem);
+    background-color: rgb(245, 245, 245);
+}
+
+#right-container .upper-content {
+    max-width: 80%;
+    padding-left: 6%;
+    padding-bottom: 8%;
+    font-weight: bold;
+}
+
+#right-container .mid-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3% 2% 6%;
+    background-color: white;
+    box-shadow: 0 20px 10px -13px rgb(218, 218, 218);
+}
+
+.form-txt {
+    padding: 2% 0;
+    font-weight: bold;
+}
+
+.form-container {
+    width: 20vw;
+    min-width: 35vw;
+    max-width: 40vw;
+    font-size: 0.8rem;
+    color: rgb(75, 75, 75);
+}
+
+.form-container form {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 10vh;
+    font-weight: bold;
+    gap: 10%;
+}
+
+.form-row {
+    padding: 0.5% 0 2% 0;
+}
+
+.form-row label {
+    font-size: clamp(0.5rem, 0.4vw, 3rem); 
+}
+
+.form-row input {
+    font-size: clamp(0.75rem, 0.6vw, 3rem);
+    padding: 2%;
+    border-radius: 4px;
+    width: 500px;
+    max-width: 35vw;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+#right-container .bottom-content {
+    padding: 3% 0 0 6%;
+}
+
+.create-btn button {
+    background-color: rgba(39, 66, 39, 0.74);
+    color: white;
+    font-size: clamp(0.6rem, 1vw, 3rem); 
+    font-weight: bold;
+    padding: 1.5% 5%;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 3px 10px 1px rgb(172, 172, 172);
+}
+
+.create-btn button:hover {
+    cursor: pointer;
+}
+
+.create-btn button:active {
+    background-color: rgba(21, 36, 21, 0.74);
+}
+
+.login {
+    font-size: clamp(0.6rem, 0.8vw, 3rem);
+    padding-top: 3%;
+}
+
+.login a {
+    color: rgba(39, 66, 39, 0.74);
+    font-weight: bold;
+    text-decoration: none;
 }
